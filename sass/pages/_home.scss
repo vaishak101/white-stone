@@ -1,0 +1,16 @@
+.feature {
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.6) 0%,
+      rgba($color-black, 0.6) 100%,
+      transparent 50%
+    ),
+    url(/img/bg/feature-bg.jpg);
+  background-size: cover;
+  background-position: top;
+  &__container {
+    background: radial-gradient(#fff2 30%, #fff4);
+    backdrop-filter: blur(5px);
+    padding: 20rem 2rem;
+  }
+}

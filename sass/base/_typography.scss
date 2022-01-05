@@ -1,1 +1,33 @@
-
+.heading-primary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  display: inline-block;
+  background: linear-gradient(
+    to right,
+    $color-primary-gold--light,
+    $color-primary-gold--dark
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right bottom,
+    $color-primary-grey,
+    $color-primary-grey--dark
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: $color-primary-gold;
+}

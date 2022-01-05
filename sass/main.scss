@@ -5,12 +5,14 @@
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
+@import "base/animations";
 //components
 @import "components/buttons";
+@import "components/feature-box";
 //layouts
 @import "layout/grid";
 @import "layout/header";
+@import "layout/navigation";
 //pages
-@import "pages/apt";
+
 @import "pages/home";
-@import "pages/villa";

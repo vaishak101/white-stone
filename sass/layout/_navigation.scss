@@ -1,0 +1,36 @@
+.nav {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  padding: 2rem 0;
+  &__ul {
+    list-style-type: none;
+    @include flex-center;
+    gap: 3rem;
+  }
+
+  &__link {
+    transition: all 0.2s;
+    display: inline-block;
+    &:link,
+    &:visited {
+      padding: 1rem 3rem;
+      font-size: 1.5rem;
+      font-weight: 200;
+      color: white;
+      text-decoration: none;
+    }
+    &:hover {
+      transform: translateY(-10%);
+      color: $color-primary-gold;
+    }
+    &:active {
+      transform: translateY(0%);
+    }
+  }
+  &__logo {
+    background-color: $color-primary-gold;
+    border-radius: 50%;
+    width: 5rem;
+  }
+}
