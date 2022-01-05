@@ -1,1 +1,25 @@
-
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.5) 0%,
+      rgba($color-black, 0.5) 100%,
+      transparent 50%
+    ),
+    url(/img/bg/pexels-nate-1036657.jpg);
+  background-size: cover;
+  background-position: top;
+}
+.hero {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10rem 2rem;
+  @include flex-center;
+  color: $color-primary-grey;
+  &--left {
+    width: 50%;
+  }
+  &--right {
+    width: 50%;
+  }
+}

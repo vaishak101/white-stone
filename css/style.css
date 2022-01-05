@@ -1,5 +1,68 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background-color: red;
+  box-sizing: border-box;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-right-text {
+  text-align: right;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem;
+}
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%, transparent 50%), url(/img/bg/pexels-nate-1036657.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.hero {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #efefef;
+}
+.hero--left {
+  width: 50%;
+}
+.hero--right {
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
