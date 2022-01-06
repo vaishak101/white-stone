@@ -2,7 +2,8 @@
   z-index: 1000;
   position: fixed;
   width: 100%;
-  padding: 2rem 0;
+  padding: 2.4rem 0;
+  // background-color: black;
   &__ul {
     list-style-type: none;
     @include flex-center;

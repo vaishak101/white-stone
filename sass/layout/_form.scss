@@ -19,17 +19,21 @@
 
   &__group {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-    margin-bottom: 2rem;
+    @include flex-center;
+    gap: 2rem;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
   }
   &__label {
     width: 50%;
     font-size: 2rem;
     font-weight: 100;
     color: $color-primary-gold;
+    transition: all 0.2s ease;
+    &:hover {
+      color: $color-primary-gold--light;
+    }
   }
   &__input {
     font-size: 1.5rem;
@@ -40,11 +44,13 @@
     border-bottom: 3px solid transparent;
     width: 50%;
     display: block;
-    transition: all 0.5s;
+    background: $color-primary-grey--dark;
+    transition: all 0.5s ease-out;
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
       border-bottom: 3px solid $color-primary-gold--dark;
+      background: $color-primary-grey;
     }
     &:focus:invalid {
       border-bottom: 3px solid red;

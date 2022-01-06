@@ -5,13 +5,13 @@
   transition: all 0.2s ease-in-out;
 
   position: relative;
-  background: radial-gradient(#fff2 30%, #fff4);
+  // background: radial-gradient(#fff2 30%, #fff4);
+  background-color: #3f0d12b7;
   box-shadow: 0px 5px 10px #0007;
-  backdrop-filter: blur(20px);
+  // backdrop-filter: blur(20px);
 
   &:hover {
     transform: scale(1.05) translateY(-2rem);
-    background-color: #3f0d12b7;
   }
 
   &--img {
