@@ -463,6 +463,63 @@ body {
   border-bottom: 3px solid red;
 }
 
+.footer {
+  padding: 10rem 2rem;
+  background-color: #000;
+}
+.footer__logo {
+  background-color: #ffc069;
+  border-radius: 50%;
+  width: 10rem;
+}
+.footer__img-name {
+  display: block;
+  letter-spacing: 1rem;
+  color: #ffc069;
+}
+.footer__link-box {
+  padding: 0 4rem;
+  width: 100%;
+}
+.footer__ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.footer__link {
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+.footer__link:link, .footer__link:visited {
+  color: #ffc069;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+}
+.footer__link:hover {
+  transform: scale(1.1);
+  color: #ffe6c3;
+  font-weight: 600;
+}
+.footer__link--name:hover {
+  transform: translateY(-20%);
+}
+.footer__text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.footer__para {
+  color: #efefef;
+  font-size: 1.1rem;
+  font-weight: 200;
+  word-spacing: 0.5rem;
+}
+
 .container {
   background: radial-gradient(#fff2 30%, #fff4);
   backdrop-filter: blur(2px);

@@ -1,0 +1,57 @@
+.footer {
+  padding: 10rem 2rem;
+  background-color: $color-black;
+  // &__logo-box {
+  // }
+  &__logo {
+    background-color: $color-primary-gold;
+    border-radius: 50%;
+    width: 10rem;
+  }
+  &__img-name {
+    display: block;
+    letter-spacing: 1rem;
+    color: $color-primary-gold;
+  }
+  &__link-box {
+    padding: 0 4rem;
+    width: 100%;
+  }
+  &__ul {
+    list-style-type: none;
+    @include flex-center;
+    gap: 2rem;
+  }
+  &__link {
+    display: inline-block;
+    transition: all 0.2s ease;
+    &:link,
+    &:visited {
+      color: $color-primary-gold;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 200;
+      letter-spacing: 0.1rem;
+    }
+    &:hover {
+      transform: scale(1.1);
+      color: $color-primary-gold--light;
+      font-weight: 600;
+    }
+    &--name {
+      &:hover {
+        transform: translateY(-20%);
+      }
+    }
+  }
+  &__text-box {
+    @include flex-center;
+    width: 100%;
+  }
+  &__para {
+    color: $color-primary-grey;
+    font-size: 1.1rem;
+    font-weight: 200;
+    word-spacing: 0.5rem;
+  }
+}
