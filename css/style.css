@@ -495,10 +495,11 @@ body {
 }
 
 .nav {
-  z-index: 1000;
-  position: fixed;
   width: 100%;
   padding: 2.4rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .nav__ul {
   list-style-type: none;
@@ -530,6 +531,11 @@ body {
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
+}
+.nav__sticky {
+  z-index: 1000;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .contact_form {

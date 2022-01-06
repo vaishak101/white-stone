@@ -1,3 +1,5 @@
+'use strict';
+
 //SLIDER
 const closeSlider = document.querySelector('.slider__btn--close');
 const openSlider = document.querySelectorAll('.btn-open');
@@ -43,3 +45,22 @@ closeSlider.addEventListener('click', hideSlider);
 for (let i = 0; i < openSlider.length; i++) {
   openSlider[i].addEventListener('click', openCaraSlider);
 }
+//sticky navigation
+const nav = document.querySelector('.nav');
+
+const header = document.querySelector('.header');
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
+    nav.classList.add('nav__sticky');
+  } else {
+    nav.classList.remove('nav__sticky');
+  }
+};
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-100px`,
+});
+headerObserver.observe(header);
