@@ -73,10 +73,31 @@ document.querySelector('.nav__ul').addEventListener('click', function (e) {
     let id = e.target.getAttribute('href');
     let sid = document.querySelector(id);
     let idcord = sid.getBoundingClientRect();
+    // revealSection();
     window.scrollTo({
       left: idcord.left + window.pageXOffset,
       top: idcord.top + window.pageYOffset,
       behavior: 'smooth',
     });
   }
+});
+//
+///
+//
+
+// Reveal section
+const allSection = document.querySelectorAll('.section');
+const revealSection = function (entries, SecObserver) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('sec-hidden');
+  SecObserver.unobserve(entry.target);
+};
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+allSection.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add('sec-hidden');
 });
