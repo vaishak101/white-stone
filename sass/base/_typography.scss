@@ -12,7 +12,38 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  &--apt {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    display: inline-block;
+    background: linear-gradient(
+      to right,
+      $color-primary-gold,
+      $color-primary-gold--dark
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }
+.heading-secondary {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  display: block;
+  background: linear-gradient(
+    to right bottom,
+    $color-primary-gold,
+    $color-primary-gold--dark
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;

@@ -1,3 +1,9 @@
+.container {
+  background: radial-gradient(#fff2 30%, #fff4);
+  backdrop-filter: blur(5px);
+  padding: 20rem 2rem;
+}
+
 .feature {
   background-image: linear-gradient(
       to right,
@@ -8,9 +14,9 @@
     url(/img/bg/feature-bg.jpg);
   background-size: cover;
   background-position: top;
-  &__container {
-    background: radial-gradient(#fff2 30%, #fff4);
-    backdrop-filter: blur(5px);
-    padding: 20rem 2rem;
-  }
+}
+.apartments {
+  background-image: url(/img/bg/apt-bg.jpg);
+  background-size: cover;
+  background-position: top;
 }

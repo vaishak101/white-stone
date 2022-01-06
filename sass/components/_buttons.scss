@@ -1,1 +1,25 @@
+.btn {
+  transition: all 0.2s;
+  display: inline-block;
 
+  &:link,
+  &:visited {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    background-image: linear-gradient(
+      to right bottom,
+      $color-primary-gold--light,
+      $color-primary-gold
+    );
+    text-decoration: none;
+    color: $color-primary-brown;
+  }
+  &:hover {
+    transform: translateY(-10%);
+    font-weight: 600;
+  }
+  &:active {
+    transform: translateY(0%);
+  }
+}

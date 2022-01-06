@@ -26,6 +26,29 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
+.heading-primary--apt {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  display: inline-block;
+  background: linear-gradient(to right, #ffc069, #b3864a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.heading-secondary {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  display: block;
+  background: linear-gradient(to right bottom, #ffc069, #b3864a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -107,6 +130,26 @@ body {
     opacity: 1;
   }
 }
+.btn {
+  transition: all 0.2s;
+  display: inline-block;
+}
+.btn:link, .btn:visited {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  background-image: linear-gradient(to right bottom, #ffe6c3, #ffc069);
+  text-decoration: none;
+  color: #4a403a;
+}
+.btn:hover {
+  transform: translateY(-10%);
+  font-weight: 600;
+}
+.btn:active {
+  transform: translateY(0%);
+}
+
 .features_box {
   padding: 3rem 2rem;
   height: 25rem;
@@ -273,15 +316,22 @@ body {
   width: 5rem;
 }
 
+.container {
+  background: radial-gradient(#fff2 30%, #fff4);
+  backdrop-filter: blur(5px);
+  padding: 20rem 2rem;
+}
+
 .feature {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%, transparent 50%), url(/img/bg/feature-bg.jpg);
   background-size: cover;
   background-position: top;
 }
-.feature__container {
-  background: radial-gradient(#fff2 30%, #fff4);
-  backdrop-filter: blur(5px);
-  padding: 20rem 2rem;
+
+.apartments {
+  background-image: url(/img/bg/apt-bg.jpg);
+  background-size: cover;
+  background-position: top;
 }
 
 /*# sourceMappingURL=style.css.map */
