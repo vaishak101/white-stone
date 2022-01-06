@@ -1,0 +1,53 @@
+.contact_form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 6rem 10rem;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.8) 0%,
+      rgba($color-black, 0.8) 100%,
+      transparent 50%
+    ),
+    url(/img/bg/feature-bg.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.form {
+  @include flex-col-center;
+
+  &__group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+  }
+  &__label {
+    width: 50%;
+    font-size: 2rem;
+    font-weight: 100;
+    color: $color-primary-gold;
+  }
+  &__input {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    // background-color: rgba($color-white, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 50%;
+    display: block;
+    transition: all 0.5s;
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      border-bottom: 3px solid $color-primary-gold--dark;
+    }
+    &:focus:invalid {
+      border-bottom: 3px solid red;
+    }
+  }
+}

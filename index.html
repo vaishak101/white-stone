@@ -18,18 +18,26 @@
     <!-- nav/////////////////////////////////////////////////////////---------Navigation----------////////////////////////// -->
     <div class="nav">
       <ul class="nav__ul">
-        <li class="nav__li"><a href="" class="nav__link">Features</a></li>
-        <li class="nav__li"><a href="" class="nav__link">Projects</a></li>
         <li class="nav__li">
-          <a href="" class="nav__link--logo"
+          <a href="#features" class="nav__link">Features</a>
+        </li>
+        <li class="nav__li">
+          <a href="#projects" class="nav__link">Projects</a>
+        </li>
+        <li class="nav__li">
+          <a href="#" class="nav__link--logo"
             ><img
               src="/img/logo/logo_small.png"
               alt="White stone Logo"
               class="nav__logo"
           /></a>
         </li>
-        <li class="nav__li"><a href="" class="nav__link">Testimonials</a></li>
-        <li class="nav__li"><a href="" class="nav__link">Book a visit</a></li>
+        <li class="nav__li">
+          <a href="#services" class="nav__link">Services</a>
+        </li>
+        <li class="nav__li">
+          <a href="#cta" class="nav__link">Book a visit </a>
+        </li>
       </ul>
     </div>
     <!-- HEADER//////////////////////////////////////////////////////////////////////--------Header---------/////////////////////// -->
@@ -53,7 +61,7 @@
     </header>
     <main class="main">
       <!-- features///////////////////////////////////////////////////////////---------Features----------////////////////////////// -->
-      <section class="feature">
+      <section class="feature" id="features">
         <div class="container">
           <div class="u-center-text">
             <h1 class="heading-primary u-margin-bottom-big">Features</h1>
@@ -115,10 +123,10 @@
         </div>
       </section>
       <!-- Projects///////////////////////////////////////////////////////////---------PROJECTS----------////////////////////////// -->
-      <section>
-        <!-- apartments/////////////////////////////////////////////////---------Apartments----------//////////////////////////////// -->
-        <section class="apartments">
-          <div class="container">
+      <section class="projects" id="projects">
+        <div class="container">
+          <!-- apartments/////////////////////////////////////////////////---------Apartments----------//////////////////////////////// -->
+          <div class="container--apt">
             <div class="u-center-text">
               <h1 class="heading-primary--apt">Apartments</h1>
               <h1 class="heading-secondary u-margin-bottom-big">
@@ -128,73 +136,222 @@
             <div class="row">
               <div class="col-1-of-4">
                 <div class="features_box u-center-text">
-                  <figure class="story__shape">
+                  <figure class="features_box--figure">
                     <img
                       src="/img/apt_ext/apt1.jpg"
-                      alt="person on a tour"
+                      alt="Apartment 1"
                       class="features_box--img"
                     />
                     <figcaption class="features_box--caption">
-                      Classic Height
+                      <span class="features_box--caption--name"
+                        >Classic Height</span
+                      >
+                      <a href="#" class="btn u-margin-top-small">Interior</a>
                     </figcaption>
                   </figure>
                 </div>
               </div>
               <div class="col-1-of-4">
                 <div class="features_box u-center-text">
-                  <figure class="story__shape">
+                  <figure class="features_box--figure">
                     <img
                       src="/img/apt_ext/apt2.jpg"
-                      alt="person on a tour"
+                      alt="Apartment 2"
                       class="features_box--img"
                     />
                     <figcaption class="features_box--caption">
-                      Eclipse Tower
+                      <span class="features_box--caption--name"
+                        >Eclipse Tower</span
+                      >
+                      <a href="#" class="btn u-margin-top-small">Interior</a>
                     </figcaption>
                   </figure>
                 </div>
               </div>
               <div class="col-1-of-4">
                 <div class="features_box u-center-text">
-                  <figure class="story__shape">
+                  <figure class="features_box--figure">
                     <img
                       src="/img/apt_ext/apt3.jpg"
-                      alt="person on a tour"
+                      alt="Apartment 3"
                       class="features_box--img"
                     />
                     <figcaption class="features_box--caption">
-                      Daisy Tower
+                      <span class="features_box--caption--name">
+                        Daisy Tower</span
+                      >
+                      <a href="#" class="btn u-margin-top-small">Interior</a>
                     </figcaption>
                   </figure>
                 </div>
               </div>
               <div class="col-1-of-4">
                 <div class="features_box u-center-text">
-                  <figure class="story__shape">
+                  <figure class="features_box--figure">
                     <img
                       src="/img/apt_ext/apt4.jpg"
-                      alt="person on a tour"
+                      alt="Apartment 4"
                       class="features_box--img"
                     />
                     <figcaption class="features_box--caption">
-                      Dewberry Height
+                      <span class="features_box--caption--name"
+                        >Dewberry Height</span
+                      >
+                      <a href="#" class="btn u-margin-top-small">Interior</a>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- villas///////////////////////////////////////////////////////////////---------Villas----------////////////////////////// -->
+          <div class="container--villa">
+            <div class="u-center-text">
+              <h1 class="heading-primary--apt">Villas</h1>
+              <h1 class="heading-secondary u-margin-bottom-big">
+                Our own Luxury Villa Projects
+              </h1>
+            </div>
+            <div class="row">
+              <div class="col-1-of-2">
+                <div class="features_box u-center-text">
+                  <figure class="features_box--figure">
+                    <img
+                      src="/img/villa_ext/pexels-chris-goodwin-32870.jpg"
+                      alt="Villa 1"
+                      class="features_box--img"
+                    />
+                    <figcaption class="features_box--caption">
+                      <span class="features_box--caption--name"
+                        >Springfield</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-1-of-2">
+                <div class="features_box u-center-text">
+                  <figure class="features_box--figure">
+                    <img
+                      src="/img/villa_ext/pexels-pixabay-258154.jpg"
+                      alt="Villa 2"
+                      class="features_box--img"
+                    />
+                    <figcaption class="features_box--caption">
+                      <span class="features_box--caption--name">Oaklands</span>
                     </figcaption>
                   </figure>
                 </div>
               </div>
             </div>
             <div class="u-center-text">
-              <a href="#" class="btn">View Interior</a>
+              <a href="#" class="btn--villas">View Interior</a>
             </div>
           </div>
-        </section>
-        <!-- villas///////////////////////////////////////////////////////////////---------Villas----------////////////////////////// -->
-        <section class="villas"></section>
+        </div>
       </section>
-      <!-- testimonials///////////////////////////////////////////////----------Testimonials------///////////////////////////////// -->
-      <section class="testimonials"></section>
+      <!-- Services///////////////////////////////////////////////----------Services------///////////////////////////////// -->
+      <section class="services" id="services">
+        <div class="u-center-text">
+          <h1 class="heading-primary u-margin-bottom-big">Services</h1>
+        </div>
+        <div class="service__row">
+          <div class="service__row_col--left">
+            <div class="service__textbox u-center-text">
+              <h1 class="service__textbox--heading">Property Management</h1>
+            </div>
+          </div>
+          <div class="service__row_col--right">
+            <p class="service__textbox--para">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+              mollitia? Voluptate animi veritatis nemo neque porro sunt enim
+              voluptatibus, ad labore quis alias natus repudiandae id, aut
+              quaerat? Nulla, illum? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Cumque, mollitia? Voluptate animi veritatis nemo
+              neque porro sunt enim voluptatibus, ad labore quis alias natus
+              repudiandae id, aut quaerat? Nulla, illum?
+            </p>
+          </div>
+        </div>
+        <div class="service__row">
+          <div class="service__row_col--left">
+            <p class="service__textbox--para">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+              mollitia? Voluptate animi veritatis nemo neque porro sunt enim
+              voluptatibus, ad labore quis alias natus repudiandae id, aut
+              quaerat? Nulla, illum? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Cumque, mollitia? Voluptate animi veritatis nemo
+              neque porro sunt enim voluptatibus, ad labore quis alias natus
+              repudiandae id, aut quaerat? Nulla, illum?
+            </p>
+          </div>
+          <div class="service__row_col--right">
+            <div class="service__textbox u-center-text">
+              <h1 class="service__textbox--heading">Professional Service</h1>
+            </div>
+          </div>
+        </div>
+        <div class="service__row">
+          <div class="service__row_col--left">
+            <div class="service__textbox u-center-text">
+              <h1 class="service__textbox--heading">Rental Service</h1>
+            </div>
+          </div>
+          <div class="service__row_col--right">
+            <p class="service__textbox--para">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+              mollitia? Voluptate animi veritatis nemo neque porro sunt enim
+              voluptatibus, ad labore quis alias natus repudiandae id, aut
+              quaerat? Nulla, illum? Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Cumque, mollitia? Voluptate animi veritatis nemo
+              neque porro sunt enim voluptatibus, ad labore quis alias natus
+              repudiandae id, aut quaerat? Nulla, illum?
+            </p>
+          </div>
+        </div>
+      </section>
       <!-- cta//////////////////////////////////////////////////////////---------C  T   A----------//////////////////////////////// -->
-      <section class="cta"></section>
+      <section class="cta" id="cta">
+        <div class="contact_form">
+          <form action="#" class="form">
+            <div class="form__group">
+              <label for="name" class="form__label">Full Name</label>
+              <input
+                type="text"
+                class="form__input"
+                id="name"
+                placeholder="Example"
+                required
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="email" class="form__label">Email address</label>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                placeholder="abc@example.com"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label">Message</label>
+              <textarea
+                class="form__input"
+                id="message"
+                name="message"
+                rows="5"
+                cols="50"
+                placeholder="Anything you want to know about !"
+              ></textarea>
+            </div>
+            <div class="form__group u-margin-top-medium">
+              <button type="submit" class="btn--submit">Contact</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <!-- footer///////////////////////////////////////////////////////////---------footer----------//////////////////////////////// -->
     <footer class="footer"></footer>

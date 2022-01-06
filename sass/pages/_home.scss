@@ -1,22 +1,37 @@
 .container {
   background: radial-gradient(#fff2 30%, #fff4);
-  backdrop-filter: blur(5px);
-  padding: 20rem 2rem;
+  backdrop-filter: blur(2px);
+  padding: 10rem 2rem;
+  padding-bottom: 20rem;
+  &--villa {
+    margin-top: 10rem;
+    padding: 10rem 2rem;
+    padding-bottom: 0;
+  }
 }
 
 .feature {
   background-image: linear-gradient(
       to right,
-      rgba($color-black, 0.6) 0%,
-      rgba($color-black, 0.6) 100%,
+      rgba($color-black, 0.8) 0%,
+      rgba($color-black, 0.8) 100%,
       transparent 50%
     ),
     url(/img/bg/feature-bg.jpg);
   background-size: cover;
   background-position: top;
 }
-.apartments {
-  background-image: url(/img/bg/apt-bg.jpg);
-  background-size: cover;
-  background-position: top;
+.projects {
+  background-color: #3f0d12b7;
+  background-image: linear-gradient(315deg, #3f0d12d3 0%, #a71d31 84%);
+}
+.services {
+  padding: 10rem 2rem;
+  background-color: #6b0f1a;
+  background-image: linear-gradient(315deg, #a11765 0%, #6b0f1a 74%);
+}
+.cta {
+  padding: 10rem 2rem;
+  background-color: #523a78;
+  background-image: linear-gradient(316deg, #523a78 0%, #ee696b 74%);
 }

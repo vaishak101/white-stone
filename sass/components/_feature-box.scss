@@ -1,5 +1,4 @@
 .features_box {
-  // background-color: rgba($color-primary-grey, 0.8);
   padding: 3rem 2rem;
   height: 25rem;
   border-radius: 5px;
@@ -12,8 +11,7 @@
 
   &:hover {
     transform: scale(1.05) translateY(-2rem);
-
-    background-color: $color-primary-brown;
+    background-color: #3f0d12b7;
   }
 
   &--img {
@@ -22,7 +20,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    // transform: translateX(-17%) scale(1.2);
     transition: all 0.5s ease;
   }
   &--caption {
@@ -37,6 +34,9 @@
     transform: translate(-50%, 20%);
     opacity: 0;
     transition: all 0.5s ease;
+    &--name {
+      letter-spacing: 0.5rem;
+    }
   }
   &:hover &--caption {
     transform: translate(-50%, -50%);
@@ -47,19 +47,3 @@
     filter: brightness(50%);
   }
 }
-
-// &:hover &__img {
-//   filter: blur(3px);
-//   transform: translateX(-17%) scale(1);
-// }
-// &:hover &__caption {
-//   transform: translate(-50%, -50%);
-//   opacity: 1;
-// }
-
-// &__text {
-//   transform: skewX(12deg);
-//   @include respond(phone) {
-//     transform: skewX(0);
-//   }
-// }}
