@@ -5,6 +5,18 @@
   padding-bottom: 20rem;
   max-width: 114rem;
   margin: 0 auto;
+  &__slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 114rem;
+    width: 80%;
+    height: 80vh;
+    padding: 5rem;
+    background-color: #501319d3;
+    background-image: linear-gradient(315deg, #81252ed3 0%, #d8314a 84%);
+  }
 }
 
 .feature {

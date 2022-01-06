@@ -1,21 +1,19 @@
 .btn {
   transition: all 0.2s;
-  display: inline-block;
+  display: block;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  font-weight: 400;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-gold--light,
+    $color-primary-gold
+  );
+  text-decoration: none;
+  color: $color-primary-brown;
 
-  &:link,
-  &:visited {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    letter-spacing: 0.5rem;
-    font-weight: 400;
-    background-image: linear-gradient(
-      to right bottom,
-      $color-primary-gold--light,
-      $color-primary-gold
-    );
-    text-decoration: none;
-    color: $color-primary-brown;
-  }
   &:hover {
     transform: translateY(-10%);
     font-weight: 600;
@@ -29,21 +27,18 @@
   font-weight: 400;
   transition: all 0.2s;
   display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  letter-spacing: 0.8rem;
+  font-weight: 200;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-gold--light,
+    $color-primary-gold
+  );
+  text-decoration: none;
+  color: $color-primary-brown;
 
-  &:link,
-  &:visited {
-    padding: 1rem 2rem;
-    font-size: 2rem;
-    letter-spacing: 0.8rem;
-    font-weight: 200;
-    background-image: linear-gradient(
-      to right bottom,
-      $color-primary-gold--light,
-      $color-primary-gold
-    );
-    text-decoration: none;
-    color: $color-primary-brown;
-  }
   &:hover {
     transform: translateY(-10%);
     font-weight: 600;
@@ -59,7 +54,6 @@
   letter-spacing: 0.9rem;
   font-weight: 400;
   font-family: inherit;
-
   text-transform: uppercase;
   transition: all 0.2s ease;
   background-image: linear-gradient(
