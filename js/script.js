@@ -1,6 +1,6 @@
 'use strict';
 
-//SLIDER
+// SLIDER ---- Select components
 const closeSlider = document.querySelector('.slider__btn--close');
 const openSlider = document.querySelectorAll('.btn-open');
 const cara_slider = document.querySelector('.popup_apt');
@@ -9,7 +9,7 @@ const sliderbtnRight = document.querySelector('.slider__btn--2');
 const slide = document.querySelectorAll('.slide');
 let curSlide = 0;
 let maxSlide = slide.length - 1;
-
+// Slider ---- Functions
 const slider = function (cursl) {
   slide.forEach(
     (s, i) => (s.style.transform = `translateX(${100 * (i - cursl)}%)`)
@@ -38,17 +38,24 @@ const openCaraSlider = function () {
   cara_slider.classList.add('visible');
 };
 slider(0);
-
+//Slider ---- Event Listeners
 sliderbtnLeft.addEventListener('click', prevSlide);
 sliderbtnRight.addEventListener('click', nextSlide);
 closeSlider.addEventListener('click', hideSlider);
 for (let i = 0; i < openSlider.length; i++) {
   openSlider[i].addEventListener('click', openCaraSlider);
 }
-//sticky navigation
+//
+//
+//
+//STICKY NAV
+//
+//
+//
+//....Select Elements
 const nav = document.querySelector('.nav');
-
 const header = document.querySelector('.header');
+//....Functions
 const stickyNav = function (entries) {
   const [entry] = entries;
   if (!entry.isIntersecting) {
@@ -57,7 +64,7 @@ const stickyNav = function (entries) {
     nav.classList.remove('nav__sticky');
   }
 };
-
+//....Observer
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
@@ -66,7 +73,11 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 headerObserver.observe(header);
 //
 //
-//smooth scroll
+//
+//SMOOTH SCROLL
+//
+//
+//
 document.querySelector('.nav__ul').addEventListener('click', function (e) {
   if (e.target.classList.contains('nav__link')) {
     e.preventDefault();
@@ -82,10 +93,12 @@ document.querySelector('.nav__ul').addEventListener('click', function (e) {
   }
 });
 //
-///
 //
-
-// Reveal section
+//
+//REVEAL SECTION
+//
+//
+//
 const allSection = document.querySelectorAll('.section');
 const revealSection = function (entries, SecObserver) {
   const [entry] = entries;
