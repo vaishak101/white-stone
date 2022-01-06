@@ -64,3 +64,19 @@ const headerObserver = new IntersectionObserver(stickyNav, {
   rootMargin: `-100px`,
 });
 headerObserver.observe(header);
+//
+//
+//smooth scroll
+document.querySelector('.nav__ul').addEventListener('click', function (e) {
+  if (e.target.classList.contains('nav__link')) {
+    e.preventDefault();
+    let id = e.target.getAttribute('href');
+    let sid = document.querySelector(id);
+    let idcord = sid.getBoundingClientRect();
+    window.scrollTo({
+      left: idcord.left + window.pageXOffset,
+      top: idcord.top + window.pageYOffset,
+      behavior: 'smooth',
+    });
+  }
+});
