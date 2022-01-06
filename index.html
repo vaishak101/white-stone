@@ -10,18 +10,22 @@
       media="print"
       onload="this.media='all'"
     />
+    <script async src="/js/script.js"></script>
     <link rel="shortcut icon" href="img/logo/fav32.png" />
+    <link rel="preload" as="image" href="img/bg/header-bg.jpg" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com" />
     <link
-      rel="preconnect"
+      rel="preload"
       href="https://fonts.gstatic.com"
       crossorigin
       as="style"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;400;600;700&display=swap"
       rel="stylesheet"
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;400;600;700&display=swap"
     />
     <title>White Stone Group</title>
   </head>
@@ -386,7 +390,10 @@
     <footer class="footer">
       <div class="footer__logo-box u-center-text u-margin-bottom-big">
         <a href="#">
-          <img src="/img/logo/logo_small.png" class="footer__logo"
+          <img
+            src="/img/logo/logo_small.png"
+            class="footer__logo"
+            alt="White Stone Group Logo"
         /></a>
         <a class="footer__img-name u-margin-top-small">WHITE STONE GROUP</a>
       </div>
@@ -506,5 +513,4 @@
     <!-- Villa CAROUSEL//////////////////////////////---------Villa CAROUSEL----------//////////////////////////////// -->
     <div class="popup_villa"></div>
   </body>
-  <script src="/js/script.js"></script>
 </html>
