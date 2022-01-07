@@ -16,7 +16,9 @@
   margin: 0 auto;
   padding: 15rem 2rem;
   color: $color-primary-grey;
-
+  @include respond(tab-port) {
+    @include flex-center;
+  }
   &--textbox {
     &__heading--1 {
       background: linear-gradient(

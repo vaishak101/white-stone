@@ -704,6 +704,13 @@ body {
   padding: 15rem 2rem;
   color: #efefef;
 }
+@media (max-width: 56.25em) {
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .hero--textbox__heading--1 {
   background: linear-gradient(to right, #ffe6c3, #ffc069);
   background-clip: text;
