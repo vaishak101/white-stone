@@ -27,6 +27,10 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    @include respond(phone) {
+      font-size: 2rem;
+      letter-spacing: 0.5rem;
+    }
   }
   &--int {
     font-size: 2.5rem;
@@ -47,6 +51,14 @@
     top: 7%;
     left: 50%;
     transform: translateX(-50%);
+    @include respond(phone) {
+      font-size: 2rem;
+      letter-spacing: 0.5rem;
+    }
+  }
+  @include respond(phone) {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
   }
 }
 .heading-secondary {
@@ -63,6 +75,10 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  @include respond(phone) {
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+  }
 }
 
 .heading-tertiary {

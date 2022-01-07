@@ -60,6 +60,12 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
+@media (max-width: 37.5em) {
+  .heading-primary--apt {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+  }
+}
 .heading-primary--int {
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -76,6 +82,18 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+@media (max-width: 37.5em) {
+  .heading-primary--int {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .heading-primary {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+  }
+}
 
 .heading-secondary {
   font-size: 1.3rem;
@@ -87,6 +105,12 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+@media (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+  }
 }
 
 .heading-tertiary {
@@ -121,13 +145,28 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem;
 }
+@media (max-width: 37.5em) {
+  .u-margin-bottom-small {
+    margin-bottom: 0.5rem;
+  }
+}
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem;
 }
+@media (max-width: 37.5em) {
+  .u-margin-bottom-medium {
+    margin-bottom: 1rem;
+  }
+}
 
 .u-margin-bottom-big {
   margin-bottom: 8rem;
+}
+@media (max-width: 37.5em) {
+  .u-margin-bottom-big {
+    margin-bottom: 3rem;
+  }
 }
 
 .u-margin-top-bigger {
@@ -137,13 +176,28 @@ body {
 .u-margin-top-big {
   margin-top: 8rem;
 }
+@media (max-width: 37.5em) {
+  .u-margin-top-big {
+    margin-top: 3rem;
+  }
+}
 
 .u-margin-top-medium {
   margin-top: 4rem;
 }
+@media (max-width: 37.5em) {
+  .u-margin-top-medium {
+    margin-top: 1rem;
+  }
+}
 
 .u-margin-top-small {
   margin-top: 1.5rem;
+}
+@media (max-width: 37.5em) {
+  .u-margin-top-small {
+    margin-top: 0.5rem;
+  }
 }
 
 @keyframes moveInleft {
@@ -251,6 +305,7 @@ body {
   position: relative;
   background-color: #3f0d12b7;
   box-shadow: 0px 5px 10px #0007;
+  overflow: hidden;
 }
 .features_box--apt {
   padding: 0;
@@ -263,8 +318,19 @@ body {
     width: 80%;
   }
 }
+@media (max-width: 37.5em) {
+  .features_box--apt {
+    height: 20rem;
+    width: 60%;
+  }
+}
 .features_box--villa {
   height: 23rem;
+}
+@media (max-width: 37.5em) {
+  .features_box--villa {
+    height: 15rem;
+  }
 }
 .features_box:hover {
   transform: scale(1.05) translateY(-2rem);
@@ -296,6 +362,13 @@ body {
 @media (max-width: 56.25em) {
   .features_box--caption {
     padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+}
+@media (max-width: 37.5em) {
+  .features_box--caption {
+    padding: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
   }
@@ -461,6 +534,11 @@ body {
 .service__row:not(:last-child) {
   margin-bottom: 10rem;
 }
+@media (max-width: 37.5em) {
+  .service__row:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
 .service__row_col--left {
   flex: 1 1 0px;
 }
@@ -500,6 +578,12 @@ body {
     transform: translateY(-15%);
   }
 }
+@media (max-width: 37.5em) {
+  .service__textbox--heading {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+  }
+}
 .service__textbox--para {
   padding: 3rem 2rem;
   font-size: 1.4rem;
@@ -516,6 +600,12 @@ body {
 @media (max-width: 56.25em) {
   .service__textbox--para {
     color: #ffc069;
+  }
+}
+@media (max-width: 37.5em) {
+  .service__textbox--para {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
   }
 }
 
@@ -619,6 +709,12 @@ body {
   animation: moveInleft 0.5s ease-out 0.65s;
   animation-fill-mode: backwards;
 }
+@media (max-width: 37.5em) {
+  .hero--textbox__heading--1 {
+    font-size: 5rem;
+    letter-spacing: 0.7rem;
+  }
+}
 .hero--textbox__para--1 {
   font-size: 1.4rem;
   font-weight: 200;
@@ -632,6 +728,11 @@ body {
   font-size: 3.5rem;
   font-weight: 400;
   text-transform: uppercase;
+}
+@media (max-width: 37.5em) {
+  .hero--textbox__heading--2 {
+    font-size: 2rem;
+  }
 }
 .hero--textbox__para--2 {
   color: #efefef;
@@ -712,16 +813,17 @@ body {
 }
 .nav__mob--cont {
   padding: 0 2rem;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   visibility: hidden;
   opacity: 0;
+  display: none;
 }
 @media (max-width: 37.5em) {
   .nav__mob--cont {
     visibility: visible;
     opacity: 1;
+    display: flex;
   }
 }
 .nav__mob-btn {
@@ -738,6 +840,12 @@ body {
   position: absolute;
   top: 7%;
   right: 4%;
+  display: none;
+}
+@media (max-width: 37.5em) {
+  .nav__mob-btn--close {
+    display: block;
+  }
 }
 .nav__logo--mob {
   background-color: #ffc069;

@@ -61,14 +61,15 @@
   }
   &__mob--cont {
     padding: 0 2rem;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     visibility: hidden;
     opacity: 0;
+    display: none;
     @include respond(phone) {
       visibility: visible;
       opacity: 1;
+      display: flex;
     }
   }
   &__mob-btn {
@@ -85,6 +86,10 @@
     position: absolute;
     top: 7%;
     right: 4%;
+    display: none;
+    @include respond(phone) {
+      display: block;
+    }
   }
   &__logo--mob {
     background-color: $color-primary-gold;

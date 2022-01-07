@@ -16,12 +16,8 @@
   margin: 0 auto;
   padding: 15rem 2rem;
   color: $color-primary-grey;
-  // position: relative;
+
   &--textbox {
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
     &__heading--1 {
       background: linear-gradient(
         to right,
@@ -31,12 +27,15 @@
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      // color: $color-primary-gold;
       font-size: 8rem;
       font-weight: 100;
       letter-spacing: 1rem;
       animation: moveInleft 0.5s ease-out 0.65s;
       animation-fill-mode: backwards;
+      @include respond(phone) {
+        font-size: 5rem;
+        letter-spacing: 0.7rem;
+      }
     }
     &__para--1 {
       font-size: 1.4rem;
@@ -50,8 +49,10 @@
       color: $color-primary-grey--dark;
       font-size: 3.5rem;
       font-weight: 400;
-
       text-transform: uppercase;
+      @include respond(phone) {
+        font-size: 2rem;
+      }
     }
     &__para--2 {
       color: $color-primary-grey;

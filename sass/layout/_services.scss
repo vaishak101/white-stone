@@ -3,6 +3,9 @@
 
   &:not(:last-child) {
     margin-bottom: 10rem;
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
   }
   &_col--left {
     flex: 1 1 0px;
@@ -38,6 +41,10 @@
     @include respond(tab-port) {
       transform: translateY(-15%);
     }
+    @include respond(phone) {
+      font-size: 2rem;
+      letter-spacing: 0.3rem;
+    }
   }
   &--para {
     padding: 3rem 2rem;
@@ -53,6 +60,10 @@
     }
     @include respond(tab-port) {
       color: $color-primary-gold;
+    }
+    @include respond(phone) {
+      font-size: 1rem;
+      letter-spacing: 0.3rem;
     }
   }
 }

@@ -8,6 +8,7 @@
   position: relative;
   background-color: #3f0d12b7;
   box-shadow: 0px 5px 10px #0007;
+  overflow: hidden;
   &--apt {
     padding: 0;
     height: 23rem;
@@ -16,9 +17,17 @@
       height: 50rem;
       width: 80%; //1rem = 8px; 8px/16px = 50%
     }
+    @include respond(phone) {
+      height: 20rem;
+      width: 60%;
+    }
   }
   &--villa {
     height: 23rem;
+    @include respond(phone) {
+      height: 15rem;
+      // width: 60%;
+    }
   }
   &:hover {
     transform: scale(1.05) translateY(-2rem);
@@ -49,6 +58,11 @@
     }
     @include respond(tab-port) {
       padding: 3rem;
+      background-color: rgba($color-black, 0.5);
+      opacity: 1;
+    }
+    @include respond(phone) {
+      padding: 1rem;
       background-color: rgba($color-black, 0.5);
       opacity: 1;
     }
