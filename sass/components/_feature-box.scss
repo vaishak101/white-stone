@@ -17,9 +17,8 @@
       height: 50rem;
       width: 80%; //1rem = 8px; 8px/16px = 50%
     }
-    @include respond(phone) {
-      height: 20rem;
-      width: 60%;
+    @include respond(small-phone) {
+      height: 30rem;
     }
   }
   &--villa {

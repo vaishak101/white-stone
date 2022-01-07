@@ -28,6 +28,11 @@
 }
 // MEDIA QUERY Manager
 @mixin respond($breakpoint) {
+  @if $breakpoint== small-phone {
+    @media (max-width: 28.25em) {
+      @content;
+    }
+  }
   @if $breakpoint== phone {
     @media (max-width: 37.5em) {
       @content;

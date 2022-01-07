@@ -318,10 +318,9 @@ body {
     width: 80%;
   }
 }
-@media (max-width: 37.5em) {
+@media (max-width: 28.25em) {
   .features_box--apt {
-    height: 20rem;
-    width: 60%;
+    height: 30rem;
   }
 }
 .features_box--villa {
