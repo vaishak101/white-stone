@@ -10,6 +10,14 @@
   &_col--right {
     flex: 1 1 0px;
   }
+  @include respond(phone) {
+    &:not(:nth-child(3)) {
+      flex-direction: column;
+    }
+    &:nth-child(3) {
+      flex-direction: column-reverse;
+    }
+  }
 }
 .service__textbox {
   width: 100%;
@@ -27,6 +35,9 @@
     &:hover {
       transform: translateY(-15%);
     }
+    @include respond(tab-port) {
+      transform: translateY(-15%);
+    }
   }
   &--para {
     padding: 3rem 2rem;
@@ -40,6 +51,9 @@
     &:hover {
       color: $color-primary-gold;
     }
+    @include respond(tab-port) {
+      color: $color-primary-gold;
+    }
   }
 }
 
@@ -49,4 +63,13 @@
 
 .service_border--right {
   border-right: 1px solid rgba($color-black, 0.2);
+}
+@include respond(phone) {
+  .service_border--left {
+    border-left: none;
+  }
+
+  .service_border--right {
+    border-right: none;
+  }
 }

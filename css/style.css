@@ -467,6 +467,14 @@ body {
 .service__row_col--right {
   flex: 1 1 0px;
 }
+@media (max-width: 37.5em) {
+  .service__row:not(:nth-child(3)) {
+    flex-direction: column;
+  }
+  .service__row:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+}
 
 .service__textbox {
   width: 100%;
@@ -487,6 +495,11 @@ body {
 .service__textbox--heading:hover {
   transform: translateY(-15%);
 }
+@media (max-width: 56.25em) {
+  .service__textbox--heading {
+    transform: translateY(-15%);
+  }
+}
 .service__textbox--para {
   padding: 3rem 2rem;
   font-size: 1.4rem;
@@ -500,6 +513,11 @@ body {
 .service__textbox--para:hover {
   color: #ffc069;
 }
+@media (max-width: 56.25em) {
+  .service__textbox--para {
+    color: #ffc069;
+  }
+}
 
 .service_border--left {
   border-left: 1px solid rgba(0, 0, 0, 0.2);
@@ -509,6 +527,15 @@ body {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 37.5em) {
+  .service_border--left {
+    border-left: none;
+  }
+
+  .service_border--right {
+    border-right: none;
+  }
+}
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -580,13 +607,6 @@ body {
   margin: 0 auto;
   padding: 15rem 2rem;
   color: #efefef;
-  position: relative;
-}
-.hero--textbox {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .hero--textbox__heading--1 {
   background: linear-gradient(to right, #ffe6c3, #ffc069);
