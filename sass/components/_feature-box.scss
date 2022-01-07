@@ -25,7 +25,6 @@
     height: 23rem;
     @include respond(phone) {
       height: 15rem;
-      // width: 60%;
     }
   }
   &:hover {
