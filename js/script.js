@@ -109,6 +109,26 @@ headerObserver.observe(header);
 //
 //
 //
+//MOBILE NAV
+//
+//
+//
+const navMobBtn = document.querySelector('.nav__mob-btn');
+const navMobBtnClose = document.querySelector('.nav__mob-btn--close');
+const navMob = document.querySelector('.nav__ul');
+const showMobNav = function () {
+  navMob.classList.add('visible');
+  navMobBtn.classList.add('hide');
+};
+const hideMobNav = function () {
+  navMob.classList.remove('visible');
+  navMobBtn.classList.remove('hide');
+};
+navMobBtn.addEventListener('click', showMobNav);
+navMobBtnClose.addEventListener('click', hideMobNav);
+//
+//
+//
 //SMOOTH SCROLL
 //
 //
@@ -116,6 +136,7 @@ headerObserver.observe(header);
 document.querySelector('.nav__ul').addEventListener('click', function (e) {
   if (e.target.classList.contains('nav__link')) {
     e.preventDefault();
+    hideMobNav();
     let id = e.target.getAttribute('href');
     let sid = document.querySelector(id);
     let idcord = sid.getBoundingClientRect();
