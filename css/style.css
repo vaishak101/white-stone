@@ -102,6 +102,7 @@ body {
 .paragraph {
   font-size: 1.6rem;
   font-weight: 200;
+  letter-spacing: 0.3rem;
   color: #ffc069;
 }
 
@@ -111,6 +112,10 @@ body {
 
 .u-right-text {
   text-align: right;
+}
+
+.u-left-text {
+  text-align: left;
 }
 
 .u-margin-bottom-small {
@@ -238,9 +243,9 @@ body {
 }
 
 .features_box {
-  padding: 3rem 2rem;
+  padding: 3rem 3rem;
   width: 100%;
-  height: 25rem;
+  margin: 0 auto;
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
   position: relative;
@@ -249,6 +254,16 @@ body {
 }
 .features_box--apt {
   padding: 0;
+  height: 23rem;
+  width: 80%;
+}
+@media (max-width: 56.25em) {
+  .features_box--apt {
+    height: 50rem;
+    width: 80%;
+  }
+}
+.features_box--villa {
   height: 23rem;
 }
 .features_box:hover {
@@ -277,6 +292,13 @@ body {
 }
 .features_box--caption--name {
   letter-spacing: 0.5rem;
+}
+@media (max-width: 56.25em) {
+  .features_box--caption {
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
 }
 .features_box:hover .features_box--caption {
   transform: translate(-50%, -50%);
@@ -491,8 +513,18 @@ body {
   max-width: 114rem;
   margin: 0 auto;
 }
+@media (max-width: 56.25em) {
+  .row {
+    max-width: 50rem;
+  }
+}
 .row:not(:last-child) {
   margin-bottom: 8rem;
+}
+@media (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
 }
 .row::after {
   content: "";
@@ -504,6 +536,17 @@ body {
 }
 .row [class^=col]:not(:last-child) {
   margin-right: 6rem;
+}
+@media (max-width: 56.25em) {
+  .row [class^=col]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .row [class^=col] {
+    width: 100% !important;
+  }
 }
 .row .col-1-of-2 {
   width: calc((100% - 6rem) / 2);
@@ -533,9 +576,17 @@ body {
 
 .hero {
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   padding: 15rem 2rem;
   color: #efefef;
+  position: relative;
+}
+.hero--textbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .hero--textbox__heading--1 {
   background: linear-gradient(to right, #ffe6c3, #ffc069);
