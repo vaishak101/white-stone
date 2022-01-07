@@ -172,6 +172,11 @@ body {
 .u-margin-top-bigger {
   margin-top: 15rem;
 }
+@media (max-width: 37.5em) {
+  .u-margin-top-bigger {
+    margin-top: 8rem;
+  }
+}
 
 .u-margin-top-big {
   margin-top: 8rem;
@@ -1039,21 +1044,51 @@ body {
   background-color: #501319d3;
   background-image: linear-gradient(315deg, #81252ed3 0%, #d8314a 84%);
 }
+@media (max-width: 37.5em) {
+  .container__slider {
+    padding: 2.5rem 2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .container {
+    padding: 2.5rem 2rem;
+  }
+}
 
 .feature {
   padding: 10rem 2rem;
+}
+@media (max-width: 37.5em) {
+  .feature {
+    padding: 5rem 2rem;
+  }
 }
 
 .projects {
   padding: 5rem 2rem;
 }
+@media (max-width: 37.5em) {
+  .projects {
+    padding: 2.5rem 2rem;
+  }
+}
 
 .services {
   padding: 5rem 2rem;
 }
+@media (max-width: 37.5em) {
+  .services {
+    padding: 2.5rem 2rem;
+  }
+}
 
 .cta {
   padding: 5rem 2rem;
+}
+@media (max-width: 37.5em) {
+  .cta {
+    padding: 2.5rem 2rem;
+  }
 }
 
 .sec-hidden {
