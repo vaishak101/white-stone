@@ -295,6 +295,13 @@ body {
   font-weight: 600;
   color: #a45d5d;
 }
+@media (max-width: 28.25em) {
+  .btn--submit {
+    width: 100%;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+  }
+}
 
 .features_box {
   padding: 3rem 3rem;
@@ -899,6 +906,14 @@ body {
 .form__group:not(:last-child) {
   margin-bottom: 2rem;
 }
+@media (max-width: 28.25em) {
+  .form__group {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}
 .form__label {
   width: 50%;
   font-size: 2rem;
@@ -908,6 +923,11 @@ body {
 }
 .form__label:hover {
   color: #ffe6c3;
+}
+@media (max-width: 28.25em) {
+  .form__label {
+    width: 100%;
+  }
 }
 .form__input {
   font-size: 1.5rem;
@@ -928,6 +948,11 @@ body {
 }
 .form__input:focus:invalid {
   border-bottom: 3px solid red;
+}
+@media (max-width: 28.25em) {
+  .form__input {
+    width: 100%;
+  }
 }
 
 .footer {
