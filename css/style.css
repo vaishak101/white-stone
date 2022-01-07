@@ -513,6 +513,19 @@ body {
   background: transparent;
   transform: translateY(-50%);
 }
+@media (max-width: 37.5em) {
+  .slider__btn--close {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .slider__btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+}
 
 .overlay {
   position: fixed;

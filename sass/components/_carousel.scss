@@ -111,6 +111,15 @@
     color: $color-primary-gold--light;
     background: transparent;
     transform: translateY(-50%);
+    @include respond(phone) {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+  @include respond(phone) {
+    background-color: rgba($color-black, 0.5);
+    height: 3.5rem;
+    width: 3.5rem;
   }
 }
 // for js
