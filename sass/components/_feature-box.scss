@@ -23,8 +23,8 @@
   }
   &--villa {
     height: 23rem;
-    @include respond(phone) {
-      height: 15rem;
+    @include respond(small-phone) {
+      height: 18rem;
     }
   }
   &:hover {

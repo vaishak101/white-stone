@@ -338,9 +338,9 @@ body {
 .features_box--villa {
   height: 23rem;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 28.25em) {
   .features_box--villa {
-    height: 15rem;
+    height: 18rem;
   }
 }
 .features_box:hover {
@@ -899,6 +899,12 @@ body {
 @media (max-width: 37.5em) {
   .contact_form {
     padding: 5rem 3rem;
+    width: 100%;
+  }
+}
+@media (max-width: 28.25em) {
+  .contact_form {
+    width: 100%;
   }
 }
 

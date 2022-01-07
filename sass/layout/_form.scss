@@ -18,6 +18,10 @@
   }
   @include respond(phone) {
     padding: 5rem 3rem;
+    width: 100%;
+  }
+  @include respond(small-phone) {
+    width: 100%;
   }
 }
 
