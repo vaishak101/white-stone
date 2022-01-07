@@ -25,7 +25,7 @@ const dotActive = function (slide) {
 };
 const slider = function (cursl) {
   slide.forEach(
-    (s, i) => (s.style.transform = `translateX(${100 * (i - cursl)}%)`)
+    (s, i) => (s.style.transform = `translate(${100 * (i - cursl)}%,-50%)`)
   );
   dotActive(cursl);
 };

@@ -16,6 +16,9 @@
     padding: 5rem;
     background-color: #501319d3;
     background-image: linear-gradient(315deg, #81252ed3 0%, #d8314a 84%);
+    @include respond(tab-port) {
+      height: 50vh;
+    }
     @include respond(phone) {
       padding: 2.5rem 2rem;
     }

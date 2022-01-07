@@ -50,7 +50,7 @@
     position: absolute;
     top: 7%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     @include respond(phone) {
       font-size: 2rem;
       letter-spacing: 0.5rem;
