@@ -1,19 +1,33 @@
 'use strict';
 
 // SLIDER ---- Select components
+const slideImgBox = document.querySelectorAll('.slide__box--img');
+const overlay = document.querySelector('.overlay');
 const closeSlider = document.querySelector('.slider__btn--close');
 const openSlider = document.querySelectorAll('.btn-open');
 const cara_slider = document.querySelector('.popup_apt');
 const sliderbtnLeft = document.querySelector('.slider__btn--1');
 const sliderbtnRight = document.querySelector('.slider__btn--2');
 const slide = document.querySelectorAll('.slide');
+const dotsCont = document.querySelector('.dots-cont');
+
 let curSlide = 0;
 let maxSlide = slide.length - 1;
 // Slider ---- Functions
+const dotActive = function (slide) {
+  document
+    .querySelectorAll('.dots-b')
+    .forEach(dot => dot.classList.remove('dots-b-active'));
+
+  document
+    .querySelector(`.dots-b[data-slide="${slide}"]`)
+    .classList.add('dots-b-active');
+};
 const slider = function (cursl) {
   slide.forEach(
     (s, i) => (s.style.transform = `translateX(${100 * (i - cursl)}%)`)
   );
+  dotActive(cursl);
 };
 const nextSlide = function () {
   if (curSlide === maxSlide) {
@@ -33,15 +47,36 @@ const prevSlide = function () {
 };
 const hideSlider = function () {
   cara_slider.classList.remove('visible');
+  overlay.classList.remove('visible');
+  slideImgBox.forEach(s => s.classList.remove('visible'));
 };
 const openCaraSlider = function () {
   cara_slider.classList.add('visible');
+  overlay.classList.add('visible');
+  slideImgBox.forEach(s => s.classList.add('visible'));
 };
+const createBtn = function () {
+  slide.forEach(function (_, i) {
+    dotsCont.insertAdjacentHTML(
+      'beforeend',
+      ` <button class="dots-b" data-slide="${i}"></button>`
+    );
+  });
+};
+createBtn();
 slider(0);
 //Slider ---- Event Listeners
 sliderbtnLeft.addEventListener('click', prevSlide);
 sliderbtnRight.addEventListener('click', nextSlide);
 closeSlider.addEventListener('click', hideSlider);
+overlay.addEventListener('click', hideSlider);
+dotsCont.addEventListener('click', function (e) {
+  if (e.target.classList.contains('dots-b')) {
+    const dotNum = e.target.dataset.slide;
+    slider(dotNum);
+  } else {
+  }
+});
 for (let i = 0; i < openSlider.length; i++) {
   openSlider[i].addEventListener('click', openCaraSlider);
 }
@@ -114,3 +149,26 @@ allSection.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add('sec-hidden');
 });
+///
+//MODAL--------------------------------------------------
+///
+// const openModal = function (e) {
+//   e.preventDefault();
+//   modal.classList.remove('hidden');
+//   overlay.classList.remove('hidden');
+// };
+
+// const closeModal = function () {
+//   modal.classList.add('hidden');
+//   overlay.classList.add('hidden');
+// };
+
+// btnsOpenModal.forEach(btn => btn.addEventListener('click', openModal));
+
+// btnCloseModal.addEventListener('click', closeModal);
+
+// document.addEventListener('keydown', function (e) {
+//   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+//     closeModal();
+//   }
+// });
