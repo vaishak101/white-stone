@@ -10,7 +10,6 @@ const sliderbtnLeft = document.querySelector('.slider__btn--1');
 const sliderbtnRight = document.querySelector('.slider__btn--2');
 const slide = document.querySelectorAll('.slide');
 const dotsCont = document.querySelector('.dots-cont');
-
 let curSlide = 0;
 let maxSlide = slide.length - 1;
 // Slider ---- Functions
