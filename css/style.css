@@ -733,7 +733,7 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%, transparent 50%), url(/img/bg/header-bg.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%, transparent 50%), url("../../img/bg/header-bg.jpg");
   background-size: cover;
   background-position: top;
 }
@@ -923,7 +923,7 @@ body {
   margin: 0 auto;
   padding: 6rem 10rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%, transparent 50%), url(/img/bg/feature-bg.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%, transparent 50%), url(../../img/bg/feature-bg.jpg);
   background-size: cover;
   background-position: top;
 }
