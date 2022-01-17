@@ -10,7 +10,7 @@
       rgba($color-black, 0.8) 100%,
       transparent 50%
     ),
-    url(../../img/bg/feature-bg.jpg);
+    url(../img/bg/feature-bg.jpg);
   background-size: cover;
   background-position: top;
   @include respond(tab-port) {
