@@ -86,25 +86,20 @@ for (let i = 0; i < openSlider.length; i++) {
 //
 //
 //
-//....Select Elements
 const nav = document.querySelector('.nav');
-const header = document.querySelector('.header');
-//....Functions
-const stickyNav = function (entries) {
-  const [entry] = entries;
-  if (!entry.isIntersecting) {
-    nav.classList.add('nav__sticky');
+
+const hero = document.querySelector('.hero')
+
+const handler = (entries) => {
+  if (!entries[0].isIntersecting) {
+    nav.classList.add('nav__sticky')
   } else {
-    nav.classList.remove('nav__sticky');
+    nav.classList.remove('nav__sticky')
   }
-};
-//....Observer
-const headerObserver = new IntersectionObserver(stickyNav, {
-  root: null,
-  threshold: 0,
-  rootMargin: `-100px`,
-});
-headerObserver.observe(header);
+}
+const observer = new window.IntersectionObserver(handler)
+observer.observe(hero)
+
 //
 //
 //

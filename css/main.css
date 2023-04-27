@@ -33,8 +33,23 @@ html {
 body {
   font-family: "Josefin Slab", serif;
   box-sizing: border-box;
-  background-color: #501319d3;
-  background-image: linear-gradient(315deg, #501319d3 0%, #a71d31 84%);
+  background-color: rgba(80, 19, 25, 0.8274509804);
+  background-image: linear-gradient(315deg, rgba(80, 19, 25, 0.8274509804) 0%, #a71d31 84%);
+}
+
+.container {
+  width: 100%;
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.page-wrapper {
+  height: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .heading-primary {
@@ -71,21 +86,19 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1rem;
+  margin-bottom: 4rem;
   display: inline-block;
   border-bottom: 1px solid #ffc069;
   background: linear-gradient(to right, #ffe6c3, #b3864a);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  position: absolute;
-  top: 7%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 @media (max-width: 37.5em) {
   .heading-primary--int {
     font-size: 2rem;
     letter-spacing: 0.5rem;
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 37.5em) {
@@ -315,8 +328,8 @@ body {
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
   position: relative;
-  background-color: #3f0d12b7;
-  box-shadow: 0px 5px 10px #0007;
+  background-color: rgba(63, 13, 18, 0.7176470588);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4666666667);
   overflow: hidden;
 }
 .features_box--apt {
@@ -400,16 +413,31 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 100%;
+  max-width: 850px;
   z-index: 9000;
   transition: opacity 0.2s ease;
+}
+@media (max-width: 56.25em) {
+  .popup_apt {
+    left: 16px;
+    right: 16px;
+    width: auto;
+    transform: translate(0, -50%);
+  }
 }
 
 .slider {
   width: 100%;
-  height: 100%;
+  height: 500px;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 56.25em) {
+  .slider {
+    height: auto;
+    padding-top: 75%;
+  }
 }
 
 .slide {
@@ -479,9 +507,9 @@ body {
 .slider__btn {
   z-index: 10;
   border: none;
-  background: transparent;
+  background: rgba(211, 211, 211, 0.8274509804);
   font-family: inherit;
-  color: #ffe6c3;
+  color: red;
   border-radius: 50%;
   height: 5.5rem;
   width: 5.5rem;
@@ -490,13 +518,13 @@ body {
 .slider__btn--1 {
   position: absolute;
   top: 50%;
-  left: 0%;
+  left: 10px;
   transform: translateY(-50%);
 }
 .slider__btn--2 {
   position: absolute;
   top: 50%;
-  right: 0%;
+  right: 10px;
   transform: translateY(-50%);
 }
 .slider__btn--close {
@@ -520,7 +548,6 @@ body {
 }
 @media (max-width: 37.5em) {
   .slider__btn {
-    background-color: rgba(0, 0, 0, 0.5);
     height: 3.5rem;
     width: 3.5rem;
   }
@@ -531,9 +558,10 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(to right bottom, #fff2 30%, #fff4);
-  backdrop-filter: blur(10px);
+  height: 100%;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1333333333) 30%, rgba(255, 255, 255, 0.2666666667));
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   z-index: 1005;
   opacity: 0;
   visibility: hidden;
@@ -667,7 +695,6 @@ body {
   .service_border--left {
     border-left: none;
   }
-
   .service_border--right {
     border-right: none;
   }
@@ -730,8 +757,7 @@ body {
   width: calc(3 * (100% - 3 * 6rem) / 4 + 12rem);
 }
 
-.header {
-  height: 100vh;
+.hero-wrapper {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%, transparent 50%), url("../img/bg/header-bg.jpg");
   background-size: cover;
   background-position: top;
@@ -741,7 +767,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 15rem 2rem;
+  padding: 12rem 0 19rem 0;
   color: #efefef;
 }
 @media (max-width: 56.25em) {
@@ -800,9 +826,6 @@ body {
 .nav {
   width: 100%;
   padding: 2.4rem 0;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .nav__ul {
   list-style-type: none;
@@ -813,12 +836,13 @@ body {
 }
 @media (max-width: 37.5em) {
   .nav__ul {
-    background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
+    background-color: #000;
+    z-index: 9999999;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -857,6 +881,8 @@ body {
 .nav__sticky {
   z-index: 1000;
   position: fixed;
+  left: 0;
+  top: 0;
   background-color: rgba(0, 0, 0, 0.9);
 }
 @media (max-width: 37.5em) {
@@ -933,7 +959,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .contact_form {
-    padding: 5rem 3rem;
+    padding: 2rem 2.5rem;
     width: 100%;
   }
 }
@@ -1066,74 +1092,44 @@ body {
   word-spacing: 0.5rem;
 }
 
-.container {
-  background: linear-gradient(to right bottom, #fff2 30%, #fff4);
+.container--glass {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1333333333) 30%, rgba(255, 255, 255, 0.2666666667));
   padding: 10rem 2rem;
-  padding-bottom: 20rem;
-  max-width: 114rem;
-  margin: 0 auto;
 }
-.container__slider {
+.container--glass__slider {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 114rem;
   width: 100%;
-  height: 80vh;
   padding: 5rem;
-  background-color: #501319d3;
-  background-image: linear-gradient(315deg, #81252ed3 0%, #d8314a 84%);
-}
-@media (max-width: 56.25em) {
-  .container__slider {
-    height: 50vh;
-  }
+  background-color: rgba(80, 19, 25, 0.8274509804);
+  background-image: linear-gradient(315deg, rgba(129, 37, 46, 0.8274509804) 0%, #d8314a 84%);
 }
 @media (max-width: 37.5em) {
-  .container__slider {
+  .container--glass__slider {
     padding: 2.5rem 2rem;
   }
 }
 @media (max-width: 37.5em) {
-  .container {
+  .container--glass {
     padding: 2.5rem 2rem;
   }
 }
 
-.feature {
-  padding: 10rem 2rem;
-}
-@media (max-width: 37.5em) {
-  .feature {
-    padding: 5rem 2rem;
-  }
-}
-
-.projects {
-  padding: 5rem 2rem;
-}
-@media (max-width: 37.5em) {
-  .projects {
-    padding: 2.5rem 2rem;
-  }
-}
-
-.services {
-  padding: 5rem 2rem;
-}
-@media (max-width: 37.5em) {
-  .services {
-    padding: 2.5rem 2rem;
-  }
-}
-
+.feature,
+.projects,
+.services,
 .cta {
-  padding: 5rem 2rem;
+  margin: 14rem 0;
 }
 @media (max-width: 37.5em) {
+  .feature,
+  .projects,
+  .services,
   .cta {
-    padding: 2.5rem 2rem;
+    margin: 7rem 0;
   }
 }
 
@@ -1144,6 +1140,4 @@ body {
 
 .section {
   transition: transform 0.5s, opacity 0.5s;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
