@@ -5,15 +5,26 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 100%;
+  max-width: 850px;
   z-index: 9000;
   transition: opacity 0.2s ease;
+  @include respond(tab-port) {
+    left: 16px;
+    right: 16px;
+    width: auto;
+    transform: translate(0, -50%);
+  }
 }
 .slider {
   width: 100%;
-  height: 100%;
+  height: 500px;
   position: relative;
   overflow: hidden;
+  @include respond(tab-port) {
+    height: auto;
+    padding-top: 75%;
+  }
 }
 
 .slide {
@@ -78,9 +89,9 @@
 .slider__btn {
   z-index: 10;
   border: none;
-  background: transparent;
+  background: #d3d3d3d3;
   font-family: inherit;
-  color: $color-primary-gold--light;
+  color: red;
   border-radius: 50%;
   height: 5.5rem;
   width: 5.5rem;
@@ -89,14 +100,14 @@
   &--1 {
     position: absolute;
     top: 50%;
-    left: 0%;
+    left: 10px;
     transform: translateY(-50%);
   }
 
   &--2 {
     position: absolute;
     top: 50%;
-    right: 0%;
+    right: 10px;
     transform: translateY(-50%);
   }
   &--close {
@@ -117,7 +128,7 @@
     }
   }
   @include respond(phone) {
-    background-color: rgba($color-black, 0.5);
+    // background-color: rgba($color-black, 0.5);
     height: 3.5rem;
     width: 3.5rem;
   }
@@ -129,7 +140,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(to right bottom, #fff2 30%, #fff4);
   backdrop-filter: blur(10px);
   z-index: 1005;

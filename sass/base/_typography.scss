@@ -37,6 +37,7 @@
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1rem;
+    margin-bottom: 4rem;
     display: inline-block;
     border-bottom: 1px solid $color-primary-gold;
     background: linear-gradient(
@@ -47,13 +48,14 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    position: absolute;
-    top: 7%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // position: absolute;
+    // top: 7%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
     @include respond(phone) {
       font-size: 2rem;
       letter-spacing: 0.5rem;
+      margin-bottom: 2rem;
     }
   }
   @include respond(phone) {
